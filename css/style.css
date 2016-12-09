@@ -160,7 +160,7 @@ section {
     overflow: hidden;
 }
 
-.slider-slides{
+.slider-slides {
     width: 500%;
     transition: transform 2s ease;
 }
@@ -195,15 +195,19 @@ section {
 #btn-1:checked ~ .slider-inner .slider-slides {
     transform: translate(0);
 }
+
 #btn-2:checked ~ .slider-inner .slider-slides {
     transform: translate(-768px);
 }
+
 #btn-3:checked ~ .slider-inner .slider-slides {
     transform: translate(-1536px);
 }
+
 #btn-4:checked ~ .slider-inner .slider-slides {
     transform: translate(-2304px);
 }
+
 #btn-5:checked ~ .slider-inner .slider-slides {
     transform: translate(-3072px);
 }
@@ -212,7 +216,7 @@ section {
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"],
 #btn-4:checked ~ .slider-controls label[for="btn-4"],
-#btn-5:checked ~ .slider-controls label[for="btn-5"]{
+#btn-5:checked ~ .slider-controls label[for="btn-5"] {
     background-color: #F29700;
     border-color: #F29700;
     opacity: 1;
@@ -231,16 +235,22 @@ label:hover {
 }
 
 @keyframes AUTO-ANIMATION {
-    from {transform: translate(0);}
-    25% {transform: translate(-768px);}
-    50% {transform: translate(-1536px);}
-    75% {transform: translate(-2304px);}
-    to {transform: translate(-3072px);}
+    from {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-768px);
+    }
+    50% {
+        transform: translate(-1536px);
+    }
+    75% {
+        transform: translate(-2304px);
+    }
+    to {
+        transform: translate(-3072px);
+    }
 }
-
-
-
-
 
 /*SERVICE*/
 
