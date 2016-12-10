@@ -165,10 +165,39 @@ section {
     transition: transform 2s ease;
 }
 
-.slider-slides img {
+.slider-slides .slide {
     float: left;
     width: 768px;
     height: 338px;
+    background-image: url("../img/slider1.jpg");
+    padding: 20px 283px 0 80px;
+    box-sizing: border-box;
+}
+
+.slider-slides .slide h2 {
+    font: bold 13px Roboto, san-serif;
+    color: white;
+    background-color: #f29700;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.slider-slides .slide h1 {
+    font: bold 40px Roboto, san-serif;
+    color: white;
+    text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.118);
+    line-height: 50px;
+    margin: 0;
+}
+
+.slider-slides .slide p {
+    font: bold 13px Arial, san-serif;
+    color: white;
+    text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.118);
+    line-height: 18px;
 }
 
 .slider-controls {
@@ -227,30 +256,30 @@ label:hover {
 }
 
 /*animation*/
-.slider-slides {
-    animation-name: AUTO-ANIMATION;
-    animation-duration: 30s;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-}
+/*.slider-slides.animate {*/
+    /*animation-name: AUTO-ANIMATION;*/
+    /*animation-duration: 30s;*/
+    /*animation-play-state: running;*/
+    /*animation-iteration-count: infinite;*/
+/*}*/
 
-@keyframes AUTO-ANIMATION {
-    from {
-        transform: translate(0);
-    }
-    25% {
-        transform: translate(-768px);
-    }
-    50% {
-        transform: translate(-1536px);
-    }
-    75% {
-        transform: translate(-2304px);
-    }
-    to {
-        transform: translate(-3072px);
-    }
-}
+/*@keyframes AUTO-ANIMATION {*/
+    /*from {*/
+        /*transform: translate(0);*/
+    /*}*/
+    /*25% {*/
+        /*transform: translate(-768px);*/
+    /*}*/
+    /*50% {*/
+        /*transform: translate(-1536px);*/
+    /*}*/
+    /*75% {*/
+        /*transform: translate(-2304px);*/
+    /*}*/
+    /*to {*/
+        /*transform: translate(-3072px);*/
+    /*}*/
+/*}*/
 
 /*SERVICE*/
 
