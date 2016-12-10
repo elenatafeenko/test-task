@@ -1,0 +1,69 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        width: 1024px;
+    }
+    /*HEADER*/
+    h2 {
+        font: bold 32px Roboto, san-serif;
+    }
+    .company p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .search input {
+        height: 26px;
+    }
+    /*NAVIGATION*/
+    nav li a {
+        font: bold 15px Arial, san-serif;
+    }
+    /*SLIDER*/
+    section {
+        width: 1024px;
+    }
+    .slider-slides .slide h2 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .slider-slides .slide h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .slider-slides .slide {
+        padding: 20px 225px 0 80px;
+    }
+    #btn-1:checked ~ .slider-inner .slider-slides {
+        transform: translate(0);
+    }
+
+    #btn-2:checked ~ .slider-inner .slider-slides {
+        transform: translate(-1024px);
+    }
+
+    #btn-3:checked ~ .slider-inner .slider-slides {
+        transform: translate(-2048px);
+    }
+
+    #btn-4:checked ~ .slider-inner .slider-slides {
+        transform: translate(-3072px);
+    }
+
+    #btn-5:checked ~ .slider-inner .slider-slides {
+        transform: translate(-4096px);
+    }
+    /*MAIN*/
+    .service {
+        padding: 29px 4px;
+    }
+    .service img {
+        margin-right: 9px;
+        width: 26px;
+    }
+    .service p {
+        font-size: 12px;
+    }
+    /*FOOTER*/
+    footer {
+        height: 80px;
+    }
+}
