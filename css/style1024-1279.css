@@ -4,7 +4,7 @@
     }
     /*HEADER*/
     h2 {
-        font: bold 32px Roboto, san-serif;
+        font-size: 32px;
     }
     .company p {
         font-size: 16px;
@@ -15,7 +15,7 @@
     }
     /*NAVIGATION*/
     nav li a {
-        font: bold 15px Arial, san-serif;
+        font-size: 15px;
     }
     /*SLIDER*/
     section {
@@ -32,10 +32,10 @@
     .slider-slides .slide {
         padding: 20px 225px 0 80px;
     }
-    #btn-1:checked ~ .slider-inner .slider-slides {
-        transform: translate(0);
+    .slider-slides .slide {
+        width: 1024px;
+        height: 446px;
     }
-
     #btn-2:checked ~ .slider-inner .slider-slides {
         transform: translate(-1024px);
     }

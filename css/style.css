@@ -107,6 +107,10 @@ input:active, input:focus {
 
 /*NAVIGATION*/
 
+.small-menu p {
+    display: none;
+}
+
 nav ul {
     width: 80%;
     margin: 0 auto;
@@ -172,6 +176,7 @@ section {
     background-image: url("../img/slider1.jpg");
     padding: 20px 283px 0 80px;
     box-sizing: border-box;
+    background-size: contain;
 }
 
 .slider-slides .slide h2 {
