@@ -14,11 +14,11 @@ $(document).ready(function () {
       .prop('checked', true);
   }
 
- /* function startAnimation() {
+ function startAnimation() {
     console.log('startAnimation');
     clearInterval(animateInterval);
     animateInterval = setInterval(animateNext, intervalTime);
-  }*/
+  }
 
   radios.on('click', function () {
     console.log('click');
