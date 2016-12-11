@@ -1,0 +1,90 @@
+@media (min-width: 1280px) {
+    @base-width: 1280px;
+
+    .container {
+        width: @base-width;
+    }
+    /*HEADER*/
+    .logo {
+        margin-left: 70px;
+
+        .company {
+        margin-top: 20px;
+
+            h2 {
+                line-height: 50px;
+                font-size: 40px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+    .search {
+        input {
+            height: 30px;
+        }
+        .lupa {
+            top: 7px;
+        }
+    }
+    /*NAVIGATION*/
+    nav ul li a {
+        font-size: 17px;
+    }
+    /*SLIDER*/
+    section {
+        width: @base-width;
+
+        .slider {
+            .slider-controls {
+                bottom: 35px;
+            }
+            .slider-inner .slider-slides .slide {
+                padding: 20px 593px 0 80px;
+                width: @base-width;
+                height: 563px;
+
+                h2 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                h1 {
+                    font-size: 60px;
+                    line-height: 85px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    .generate-slider-buttons(5);
+
+    .generate-slider-buttons(@n, @i: 1) when (@i =< @n) {
+        #btn-@{i}:checked ~ .slider-inner .slider-slides {
+            transform: translate((@i - 1)*(-1)*@base-width);
+        }
+
+        .generate-slider-buttons(@n, (@i + 1));
+    }
+
+    /*MAIN*/
+    .main .service-container .service {
+        padding: 29px 4px;
+
+        img {
+            margin-right: 14px;
+            width: 34px;
+        }
+        p {
+            font-size: 19px;
+        }
+    }
+    /*FOOTER*/
+    footer {
+        height: 95px;
+    }
+}

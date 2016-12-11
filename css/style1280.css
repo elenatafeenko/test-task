@@ -52,21 +52,6 @@
         width: 1280px;
         height: 563px;
     }
-    #btn-2:checked ~ .slider-inner .slider-slides {
-        transform: translate(-1280px);
-    }
-
-    #btn-3:checked ~ .slider-inner .slider-slides {
-        transform: translate(-2560px);
-    }
-
-    #btn-4:checked ~ .slider-inner .slider-slides {
-        transform: translate(-3840px);
-    }
-
-    #btn-5:checked ~ .slider-inner .slider-slides {
-        transform: translate(-5120px);
-    }
     .slider-controls {
         bottom: 35px;
     }

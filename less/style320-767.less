@@ -1,0 +1,129 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    /*HEADER*/
+    .logo {
+        margin-left: 10px;
+
+        .company {
+            margin-top: 20px;
+            padding-left: 3px;
+
+            h2 {
+                margin: 0;
+                line-height: 35px;
+                font-size: 20px;
+            }
+            p {
+                font-size: 13px;
+                line-height: 16px;
+                width: 100px;
+            }
+        }
+    }
+    .search {
+        width: 40%;
+        margin-right: 10px;
+        margin-top: 30px;
+
+        input {
+             padding-left: 5px;
+             font-size: 11px;
+             border-width: 2px;
+         }
+        .lupa {
+            right: 5px;
+        }
+    }
+    /*NAVIGATION*/
+    .small-menu {
+        position: relative;
+
+        p {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            font-size: 60px;
+            color: @default-text-color;
+            margin: 0;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+        ul {
+            display: none;
+
+            li {
+                float: none;
+                background-color: rgba(211, 211, 211, 0.74);
+                width: 120px;
+
+                a {
+                    line-height: 22px;
+                    padding: 0 10px;
+                    height: initial;
+                }
+            }
+        }
+        p:hover+ul, ul:hover {
+            display: block;
+            position: absolute;
+            top: 28px;
+            right: 0;
+            z-index: 2;
+            padding: 0;
+        }
+    }
+    /*SLIDER*/
+    section {
+        width: 100%;
+
+        .slider .slider-inner .slider-slides .slide {
+            width: 20%;
+            padding: 10px 56px 0 25px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h2 {
+                font-size: 10px;
+            }
+            h1 {
+                 font-size: 30px;
+                 line-height: 40px;
+             }
+        }
+    }
+
+    .generate-slider-buttons(5);
+
+    .generate-slider-buttons(@n, @i: 1) when (@i =< @n) {
+        #btn-@{i}:checked ~ .slider-inner .slider-slides {
+            transform: translate((@i - 1)*(-1)*20%);
+        }
+
+        .generate-slider-buttons(@n, (@i + 1));
+    }
+
+    /*MAIN*/
+    .main .service-container {
+        width: 100%;
+        padding: 0 3px;
+
+        .service {
+            padding: 0;
+            text-decoration: none;
+
+            img {
+                float: none;
+                width: 25px;
+                margin: 5px auto;
+            }
+            p {
+                float: none;
+                font-size: 8px;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
